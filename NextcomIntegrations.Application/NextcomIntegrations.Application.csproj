@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NextcomIntegrations.Core\NextcomIntegrations.Core.csproj" />
+    <ProjectReference Include="..\NextcomIntegrations.Infrastructure\NextcomIntegrations.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
