@@ -1,4 +1,5 @@
 ﻿using System;
+using NextcomIntegrations.Application;
 using NextcomIntegrations.Core.ApplicationServices;
 using NextcomIntegrations.Infrastructure.DataAccess;
 using NextcomIntegrations.Infrastructure.Nextcom;
@@ -10,14 +11,7 @@ namespace NextcomIntegrations.UserInterfaceConsole
     {
         static void Main(string[] args)
         {
-            var service = new IntegrationService(
-                new ChecksumRepository(), 
-                new MasterListService(), 
-                new NextcomRepository(), 
-                new TripletexProductService()
-            );
-
-            service.FullSyncProducts();
+            App.Run();
         }
     }
 }
